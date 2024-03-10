@@ -8,6 +8,8 @@ public class Program
         foreach (var i in list)
             Console.WriteLine(i);
 
+        Console.WriteLine(list.Average());
+
         Console.WriteLine("Program end");
     }
 }
