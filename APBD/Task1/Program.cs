@@ -8,7 +8,8 @@ public class Program
         foreach (var i in list)
             Console.WriteLine(i);
 
-        Console.WriteLine(list.Average());
+        Console.WriteLine($"Average: {list.Average()}");
+        Console.WriteLine($"Max: {list.MaxValue()}");
 
         Console.WriteLine("Program end");
     }
