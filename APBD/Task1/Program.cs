@@ -8,7 +8,7 @@ public class Program
         foreach (var i in list)
             Console.WriteLine(i);
 
-        Console.WriteLine($"Average: {list.Average()}");
+        Console.WriteLine($"Average: {list.AverageValue()}");
         Console.WriteLine($"Max: {list.MaxValue()}");
 
         Console.WriteLine("Program end");
@@ -17,7 +17,7 @@ public class Program
 
 public static class MathExtensions
 {
-    public static double? Average(this IEnumerable<int> ints)
+    public static double? AverageValue(this IEnumerable<int> ints)
     {
         if (!ints.Any()) return null;
 
