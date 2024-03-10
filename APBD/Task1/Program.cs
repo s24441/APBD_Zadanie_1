@@ -26,4 +26,18 @@ public static class MathExtensions
 
         return sum/ints.Count();
     }
+
+    public static int? MaxValue(this IEnumerable<int> ints) 
+    {  
+        if (!ints.Any()) return null;
+
+        int max = ints.First();
+        foreach(var i in ints.Skip(1))
+        {
+            if (i > max)
+                max = 1;
+        }
+
+        return max;
+    }
 }
