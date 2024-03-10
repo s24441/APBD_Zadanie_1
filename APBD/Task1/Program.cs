@@ -11,3 +11,17 @@ public class Program
         Console.WriteLine("Program end");
     }
 }
+
+public static class MathExtensions
+{
+    public static double? Average(this IEnumerable<int> ints)
+    {
+        if (!ints.Any()) return null;
+
+        double sum = 0;
+        foreach (var i in ints)
+            sum += i;
+
+        return sum/ints.Count();
+    }
+}
